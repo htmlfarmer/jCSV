@@ -75,7 +75,7 @@ function CSV(text){
       }
       else { // Error Case
         element += text[i]; 
-        quoted = true; // else do nothing ... element = element;
+        quoted = false; // else do nothing ... element = element;
       }
     }
     else if(comma.indexOf(text[i]) >= 0){
