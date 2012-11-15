@@ -33,7 +33,7 @@ function CSV(text){
 
   // BUG/TODO: add code to convert %
   var num = function(str){
-    var value = str.replace(/^\$/, '');
+    var value = str.replace(/[$% ,]/g, '');
     if(isNaN(value) || value == ""){ // is it not a number?
       return str;
     }
