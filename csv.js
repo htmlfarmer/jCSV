@@ -4,8 +4,8 @@
     Version: 3.0
     
     Example: 
-            [[row0],[row1],[row2],...] = csv("filename.csv");
-            [[row0],[row1],[row2],...] = Parse(text);
+            [[row0],[row1],[row2],...] = CSV(text);
+
    
     About:  Reads a Comma Separated File (CSV).
     About:  Stores the CSV file in an 2D Array that is returned in the format lines[line][column]
