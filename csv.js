@@ -1,24 +1,19 @@
 /*
 
-    CSV Reader
+    CSV Reader - Reads a CSV text string and also converts it into a 2D array of floats/integers/strings
     Version: 3.0
     
     Example: 
             [[row0],[row1],[row2],...] = CSV(text);
-
-   
-    About:  Reads a Comma Separated File (CSV).
-    About:  Stores the CSV file in an 2D Array that is returned in the format lines[line][column]
-    About:  csv() returns (strings || floats || integers) in a 2D array [[row0],[row1],[row2],...]
     
     Usage:  <script type="text/javascript" src="csv.js"></script>
             var table = new CSV(text);
+            var element = table[3][2]; // element = row 3 column 2 (string/float/int)
     
     CSV Specification: http://en.wikipedia.org/wiki/Comma-separated_values
 
     TODO:  add support for # comment lines (CSV spec?)
-    TODO:  add support for various floating point formats other then 0.0123
-    TODO:  Add code to convert 10.0% to .1 not 10.0 
+    TODO:  Add code to convert 10.0% to .1 (this code will convert $ to regular floats)
       
     Tested with various Microsoft CSV Files with wierd "A""" and ","""
     
