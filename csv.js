@@ -17,7 +17,7 @@ Tested with various Microsoft CSV Files with wierd "A""" and ","""
 function CSV(text, params){ // type is optional - useful for returning objects or speedup if you dont want to parse the numbers out
 
   var type = {object : false, // if true: [{row},{row},{row},{}] else [[row],[row],[row]] without object lebels
-              parse : true // if true: parseFloat() and parseInt() are used otherwise not
+              parse : true // if true: parseFloat() and parseInt() are used otherwise TEXT
               };
 
   if(params) {
